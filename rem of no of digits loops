@@ -1,0 +1,21 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+public static  int digit(int x)
+    {
+        int r=(int)Math.log10(x)+1;
+       int m=(int)x%r;
+       return m;
+    }
+    public static void main(String[] args) 
+    {
+        Scanner s=new Scanner(System.in);
+        int a=s.nextInt();
+        int rem=digit(a);
+        System.out.println(rem);
+        
+    }
+    
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
