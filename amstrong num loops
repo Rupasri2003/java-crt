@@ -1,0 +1,31 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int t,d,S=0;
+        int n1=(int)Math.log10(n)+1;
+        t=n;
+        while (n > 0)
+        {
+         d=n%10;
+         n=n/10;
+         S=S+(int)Math.pow(d,n1);
+        }
+
+       
+            if(t==S)
+            {
+                System.out.println("Yes");
+            }
+            else
+            {
+                System.out.println("No");
+            }
+       
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
