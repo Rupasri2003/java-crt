@@ -1,0 +1,29 @@
+import java.io.*;
+import java.util.*;
+
+public class Solution{
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        int n=s.nextInt();
+        int flag=0;
+        for(int i=1;i<=n;i++)
+        {
+            if(n%i==0)
+            {   
+                /*float sr=(float)Math.sqrt(n);
+                System.out.println(sr);*/
+                flag++;
+            }
+        }
+        if(flag==2)
+        {
+             float sr=(float)Math.sqrt(n);
+            System.out.printf("%.2f",sr);
+        }
+        else
+        {
+            System.out.println(n+" is not a prime no");
+        }
+        /* Enter your code here. Read input from STDIN. Print output to STDOUT. Your class should be named Solution. */
+    }
+}
